@@ -108,7 +108,7 @@
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti per ogni esame, stampando anche il voto massimo. Successivamente, filtrare i tentativi con voto minimo 18.
 
     SELECT
-        CONCAT(`students`.`name`, `students`.`surname`) AS 'student',
+        CONCAT(`students`.`name`, " ", `students`.`surname`) AS 'student',
         `exams`.`course_id`,
         `courses`.`name` AS 'course_name',
         COUNT(*) AS 'number_of_try',
