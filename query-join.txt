@@ -125,6 +125,6 @@
     INNER JOIN `courses`
     ON `courses`.`id` = `exams`.`course_id`
 
-    WHERE `exam_student`.`vote` < 18
+    WHERE `exam_student`.`vote` >= 18
 
     GROUP BY `exam_student`.`student_id`, `exams`.`course_id`;
